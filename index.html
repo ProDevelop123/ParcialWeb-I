@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d2fd65149.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+    <div class="top-header">
+        <div class="container">
+            <ul class="dima-menustart">
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i> Sunday, May 29 2022</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> 738 Kertzann Wall, 4989 Louie Rapid Suite 061</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone-flip"></i> 001 725 9143</a></li>
+            </ul>
+        </div>
+        <ul class="dima-menuend">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="logo-header">
+            <img src="/img/logoOKAB.png" alt="logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">عربي</a></li>
+            </ul>
+        </nav>
+        <nav class="button-menu">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </nav>
+    </header>
+<body>
+    <div class="slide s1">
+        <h1>We Help Companies Grow</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolores!<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, dolor</p>
+        <button class="baner1"><h2>PURCHARSE MORE</h2></button>
+        <button class="baner2"><h2>LEARN MORE</h2></button>
+    </div>
+    <div class="slide s2">
+        <h1>Business & Finance Theme</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, dolor<br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, dolor</p>
+        <button class="baner1"><h2>PURCHARSE MORE</h2></button>
+        <button class="baner2"><h2>LEARN MORE</h2></button>
+    </div>
+    <div class="boton derecha">&gt;</div>
+    <div class="boton izquierda">&lt;</div>
+    <ul class="paginacion">
+        <li>0</li>
+        <li>1</li>
+    </ul>
+
+
+<!-- Our Services-->    
+<section id="our services" class="padded">
+    <div class="container">
+    <h3>Our Services</h3>
+    <p>Lorem ipsum sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+    temporincididunt ut laore et dolore magna aliqua</p>
+    <div class="row justify-content-center">
+        <div class="col">
+            <h4>Content Strategy</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, tempora!</p>
+        </div>
+        <div class="col">
+            <h4>Custom Writing</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, hic.</p>
+        </div>
+        <div class="col">
+            <h4>Content Strategy</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, odit.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+</body>  
+
+
+
+
+
+<script>
+    var indice=0;
+$(".paginacion li").eq("background-color","orange");
+$(".paginacion li").click(function(){
+    indice=$(this).index();
+    $(".paginacio li").css("background-color","yellow");
+    $(this).css("background-color","orange");
+    $(".slide").hide();
+    $(".slide").eq(indice).fadeIn();
+});
+$(".derecha").click(function(){
+indice++;
+if(indice>1){
+    indice=0;
+}
+$(".slide").hide();
+$(".slide").eq(indice).fadeIn();
+
+});
+$(".izquierda").click(function(){
+indice--;
+if(indice<0){
+    indice=1;
+}
+$(".slide").hide();
+$(".slide").eq(indice).fadeIn();
+});
+</script>
+
+</html>

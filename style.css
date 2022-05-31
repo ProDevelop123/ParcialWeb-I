@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #c2c2c2;
+}
+a, li, button{
+    font-family: 'Open Sans','Lato', sans-serif, sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.dima-topbar{
+    background-color: #1565c0;
+    position: relative;
+    min-height: 34px;
+}
+.dima-menustart{
+    padding: 8px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    float: left;
+    text-align: left;
+    cursor:pointer;
+}
+.dima-menustart i{
+    font-size: 17px;
+}
+.dima-menustart li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.dima-menustart li a{
+    color: #ffffff;
+}
+
+
+.dima-menuend{
+    padding: 8px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    float: left;
+    text-align: left;
+    cursor:pointer;
+}
+.dima-menuend i{
+    font-size: 17px;
+}
+.dima-menuend li{
+    display: inline-block;
+
+    margin-right: 4px;
+    padding: 0 5px;
+}
+.dima-menuend li a{
+    color: #ffffff;
+}
+
+.container{
+    width: auto;
+    max-width: 1240px;
+}
+.top-header{
+    background-color:  #1565c0;;
+    display: flex;
+    align-items: center;
+    padding: 2px 4%;
+    justify-content: space-between;
+}
+.dima-menustart{
+    background-color:  #1565c0;;
+    padding: 8px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+header{
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+}
+.logo-header{
+    cursor:pointer;
+    margin-right: auto;
+}
+.nav-menu{
+    list-style: none;
+}
+.nav-menu li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.nav-menu li a{
+    transition: all 0.3s ease 0s;
+}
+.button-menu{
+    font-size: 20px;
+    margin-left: 25px;
+    cursor:pointer;
+}
+.nav-menu li a:hover{
+    color: #0088a9;
+}
+.button-menu i{
+    transition: all 0.3s ease 0s;
+}
+.button-menu i:hover{
+    color: #0088a9;
+}
+
+/* carrousel */
+
+.slide{
+    text-align: left;
+    padding: 220px 50px;
+    background-size: cover;
+    font-family: 'Open Sans','Lato', sans-serif, sans-serif;
+}
+.s1{
+    background-image: url(https://www.salessupply.nl/media/SS_home12_1800x1030.jpg);
+}
+.s2{
+    background-image: url(https://www.accvent.com/wp-content/uploads/2020/02/dam-hero.jpg);
+    display: none;
+}
+body{
+    position: relative;
+}
+h2{
+    font-size: 14px;
+    color: white;
+}
+.slide h1{
+    font-size: 35pt;
+    font-weight: 500px;
+    margin-bottom: 20px;
+    margin-top: -74px;
+    margin-left: 35px;
+}
+.slide p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    color: #838485;
+}
+.baner1{
+    height:40px;
+    background-color: rgb(83, 228, 69);
+    padding: 5px 50px;
+    border: 0px;
+    margin-left: 35px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+.baner2{
+    height:40px;
+    background-color: rgb(61, 87, 202);
+    padding: 5px 50px;
+    border: 0px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+.boton{
+    font-size: 16pt;
+    color: rgba(255, 255, 255, 0.0);
+    position: absolute;
+    top: 45%;
+    background-color: rgba(12, 35, 168, 0.0);
+    padding: 8px 13px;
+    cursor: pointer;
+}
+.boton:hover{
+    transition: 1s;
+    color: rgba(255, 255, 255, 1.5);
+    background-color: rgba(12, 35, 168, 1.5);
+}
+.derecha{
+    right: 60px;
+}
+.izquierda{
+    left: 60px;
+}
+
